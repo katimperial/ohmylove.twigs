@@ -13,7 +13,9 @@ ohmylove.twigs is an FKA twigs fan page <3 dedicated to everyone's favorite ethe
 Functionalities will include: a blog with the option to leave comments, a gallery, music and/or video page, and (hopefully) a Dollz maker.
 ## ERD, Component Hierarchy Diagram, and Trello Board
 [Backend ERD](https://lucid.app/lucidchart/d7396ff7-9e4c-4a92-af7e-645aeba4ee45/edit?invitationId=inv_c7041a1c-dc69-484d-80b4-2c61da23629f)
+...
 [Frontend Component Hierarchy Diagram](https://lucid.app/lucidchart/5ba3e554-0885-492a-b7b3-ccb35ca3613c/edit?invitationId=inv_913e0d6e-e6fc-41a6-8b13-b565e0760308)
+...
 [Trello Board](https://lucid.app/lucidchart/5ba3e554-0885-492a-b7b3-ccb35ca3613c/edit?invitationId=inv_913e0d6e-e6fc-41a6-8b13-b565e0760308)
 ## Aesthetic inspirations
 ![MIA "XXXO"](https://www.normanrecords.com/artwork/medium/6/120256-mia-xxxo.jpg)
