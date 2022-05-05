@@ -9,12 +9,16 @@ MERN stack
 (React)
 (Node)
 ## What is ohmylove.twigs?
-ohmylove.twigs is an FKA Twigs fan page <3 dedicated to everyone's favorite ethereal post 21st Century British pop star. It is inspired by early/mid-aughts fan sites (often hosted on AngelFire or Geocities). These sites were made for no reason other than to express the pure joy of the fan, often created by teenagers with nothing but a passion for their subject and a copy of "HTML for Dummies". In my opinion, an example of 21st c. folk art.
+ohmylove.twigs is an FKA twigs fan page <3 dedicated to everyone's favorite ethereal post 21st Century British pop star. It is inspired by early/mid-aughts fan sites (often hosted on AngelFire or Geocities). These sites were made for no reason other than to express the pure joy of the fan, often created by teenagers with nothing but a passion for their subject and a copy of "HTML for Dummies". In my opinion, an example of 21st c. folk art.
 Functionalities will include: a blog with the option to leave comments, a gallery, music and/or video page, and (hopefully) a Dollz maker.
+## ERD, Component Hierarchy Diagram, and Trello Board
+[Backend ERD](https://lucid.app/lucidchart/d7396ff7-9e4c-4a92-af7e-645aeba4ee45/edit?invitationId=inv_c7041a1c-dc69-484d-80b4-2c61da23629f)
+[Frontend Component Hierarchy Diagram](https://lucid.app/lucidchart/5ba3e554-0885-492a-b7b3-ccb35ca3613c/edit?invitationId=inv_913e0d6e-e6fc-41a6-8b13-b565e0760308)
+[Trello Board](https://lucid.app/lucidchart/5ba3e554-0885-492a-b7b3-ccb35ca3613c/edit?invitationId=inv_913e0d6e-e6fc-41a6-8b13-b565e0760308)
 ## Aesthetic inspirations
 ![MIA "XXXO"](https://www.normanrecords.com/artwork/medium/6/120256-mia-xxxo.jpg)
 ![Chobits Blog](https://i.imgur.com/iU4OTqc.jpg)
-![https://yamaki-anime.livejournal.com/tag/chobits](https://i.imgur.com/6JSZoAI.png)
+![https://yamaki-anime.livejournal.com/tag/chobits](https://i.imgur.com/41IC1Vp.jpg)
 ![Babyssb.co.jp](https://i.imgur.com/M53xXZ9.png)
 ![https://web.archive.org/web/20200317020158/https://officekiko.com/pages/shop](https://i.imgur.com/3IYPXo1.jpeg)
 ![https://blog.geocities.institute/archives/4104](http://blog.geocities.institute/wp-content/uploads/tumblr_my1nkfkN4s1rlkewbo1_12801.png)
