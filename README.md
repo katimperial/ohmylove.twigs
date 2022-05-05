@@ -23,8 +23,10 @@ Functionalities will include: a blog with the option to leave comments, a galler
 ![Marmalade Boy](https://64.media.tumblr.com/eb115938fbaff035dacdef051e760d00/9ec6df2a33bc60ec-bc/s1280x1920/84fec62e3a9a33cc883cd57e17249ba8a20e57cf.png)
 ![Cherry's Sailor Pluto Page](https://64.media.tumblr.com/466e3a56cc2e8810c419828503d22c75/9ec6df2a33bc60ec-5e/s1280x1920/00ed49d835a2f8faee240bf18114f22651889ec5.gifv)
 ![Kodomo No Omocha](https://64.media.tumblr.com/586eb83540f64bacde14faa71be633d3/9ec6df2a33bc60ec-e4/s1280x1920/c6570304a3c3a632c0a554cd39401dd2cd387a6b.png)
+![Fruits Basket](https://computerhistory.org/wp-content/uploads/2019/08/deleted-cities-anime-542x406.jpg)
 ![https://yamaki-anime.livejournal.com/tag/chobits](https://i.imgur.com/41IC1Vp.jpg)
 ![Babyssb.co.jp](https://i.imgur.com/M53xXZ9.png)
+![Dream Fantasy Realm](https://motherboard-images.vice.com/content-images/contentimage/24811/1440083601795293.jpg?resize=1600:*)
 ![https://web.archive.org/web/20200317020158/https://officekiko.com/pages/shop](https://i.imgur.com/3IYPXo1.jpeg)
 ![https://blog.geocities.institute/archives/4104](http://blog.geocities.institute/wp-content/uploads/tumblr_my1nkfkN4s1rlkewbo1_12801.png)
 ![https://www.angelfire.com/falcon/majinamara/dollz/gothmaker.html](https://i.imgur.com/S33eeSe.png)
@@ -33,3 +35,8 @@ Functionalities will include: a blog with the option to leave comments, a galler
 ![http://www.rsteviemoore.com/](https://i.imgur.com/FquoNH2.png)
 ![https://web.archive.org/web/20100227040047/http://milkbbi.com/](https://i.imgur.com/55KLE1p.png)
 ![http://www.bio.brandeis.edu/fieldbio/medicinal_plants/pages/smartweed.html](https://i.imgur.com/omdBhZ3.png)
+
+## Sources
+[Anime Geocities Screenshots](https://gloomypanties.tumblr.com/post/189890593022/anime-themed-geocities-x)
+[Fruits Basket fanpage screenshot](https://computerhistory.org/blog/a-tale-of-deleted-cities/)
+[Dream Fantasy Realm screenshot](https://www.vice.com/en/article/xywb57/beat-your-eyeballs-to-death-with-this-majestic-geocities-tribute)
