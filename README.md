@@ -20,6 +20,9 @@ Functionalities will include: a blog with the option to leave comments, a galler
 ## Aesthetic inspirations
 ![MIA "XXXO"](https://www.normanrecords.com/artwork/medium/6/120256-mia-xxxo.jpg)
 ![Chobits Blog](https://i.imgur.com/iU4OTqc.jpg)
+![Marmalade Boy](https://64.media.tumblr.com/eb115938fbaff035dacdef051e760d00/9ec6df2a33bc60ec-bc/s1280x1920/84fec62e3a9a33cc883cd57e17249ba8a20e57cf.png)
+![Cherry's Sailor Pluto Page](https://64.media.tumblr.com/466e3a56cc2e8810c419828503d22c75/9ec6df2a33bc60ec-5e/s1280x1920/00ed49d835a2f8faee240bf18114f22651889ec5.gifv)
+![Kodomo No Omocha](https://64.media.tumblr.com/586eb83540f64bacde14faa71be633d3/9ec6df2a33bc60ec-e4/s1280x1920/c6570304a3c3a632c0a554cd39401dd2cd387a6b.png)
 ![https://yamaki-anime.livejournal.com/tag/chobits](https://i.imgur.com/41IC1Vp.jpg)
 ![Babyssb.co.jp](https://i.imgur.com/M53xXZ9.png)
 ![https://web.archive.org/web/20200317020158/https://officekiko.com/pages/shop](https://i.imgur.com/3IYPXo1.jpeg)
