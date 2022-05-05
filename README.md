@@ -14,8 +14,8 @@ Functionalities will include: a blog with the option to leave comments, a galler
 ## Aesthetic inspirations
 ![MIA "XXXO"](https://www.normanrecords.com/artwork/medium/6/120256-mia-xxxo.jpg)
 ![Chobits Blog](https://i.imgur.com/iU4OTqc.jpg)
-![https://yamaki-anime.livejournal.com/tag/chobits](blob:https://imgur.com/745e999e-b25e-4546-8a20-5f2d8bde0db4)
-![Babyssb.co.jp](blob:https://imgur.com/5d154996-5511-4890-94f5-5da8872632ae)
+![https://yamaki-anime.livejournal.com/tag/chobits](https://i.imgur.com/6JSZoAI.png)
+![Babyssb.co.jp](https://i.imgur.com/M53xXZ9.png)
 ![https://web.archive.org/web/20200317020158/https://officekiko.com/pages/shop](https://i.imgur.com/3IYPXo1.jpeg)
 ![https://blog.geocities.institute/archives/4104](http://blog.geocities.institute/wp-content/uploads/tumblr_my1nkfkN4s1rlkewbo1_12801.png)
 ![https://www.angelfire.com/falcon/majinamara/dollz/gothmaker.html](https://i.imgur.com/S33eeSe.png)
