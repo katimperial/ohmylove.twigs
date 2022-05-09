@@ -38,5 +38,7 @@ Functionalities will include: a blog with the option to leave comments, a galler
 
 ## Sources
 [Anime Geocities Screenshots](https://gloomypanties.tumblr.com/post/189890593022/anime-themed-geocities-x)
+
 [Fruits Basket fanpage screenshot](https://computerhistory.org/blog/a-tale-of-deleted-cities/)
+
 [Dream Fantasy Realm screenshot](https://www.vice.com/en/article/xywb57/beat-your-eyeballs-to-death-with-this-majestic-geocities-tribute)
