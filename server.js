@@ -1,40 +1,26 @@
-const express = require('express')
+const express = require('express');
+const routes = require('./routes');
+const db = require('./db');
+const bodyParser = require('body-parser');
 const cors = require('cors')
-const logger = require('morgan')
-const PORT = process.env.PORT || 3001
-const db = require('./db')
-const { BlogPost, Comment, Gallery, Video } = require('./models')
 
-const app = express()
+// require() imports and middleware here ^ ///////
 
+const PORT = process.env.PORT || 3001;
+
+const app = express();
+app.use(bodyParser.json())
+app.use(express.static(`${__dirname}/client/build`))
 app.use(cors())
-app.use(express.json())
-app.use(logger('dev'))
 
-app.get('/', (req, res) => {
-  res.send('This is root!')
-})
+// app.use() middleware here ^ ///////////////////
 
-app.get('/blogposts', async (req, res) => {
-    const blogposts = await BlogPost.find()
-    res.json(blogposts)
-})
+app.use('/api', routes);
 
-app.get('/comments', async (req, res) => {
-    const comments = await Comment.find()
-    res.json(comments)
-})
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-app.get('/gallery', async (req, res) => {
-    const gallery = await Gallery.find()
-    res.json(gallery)
-})
+app.get('/*', (req, res) => {
+    res.sendFile(`${__dirname}/client/build/index.html`)
+   })
 
-app.get('/videos', async (req, res) => {
-    const videos = await Video.find()
-    res.json(videos)
-})
-
-app.listen(PORT, () => {
-  console.log(`Express server listening on port ${PORT}`)
-})
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
