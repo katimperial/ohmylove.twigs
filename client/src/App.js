@@ -10,7 +10,6 @@ import TwigzMaker from './components/TwigzMaker'
 import Videos from './components/Videos'
 import Gallery from './components/Gallery';
 import LogIn from './components/LogIn'
-import Posts from './components/Posts'
 
 const App = () => {
 
@@ -18,7 +17,6 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <Nav />
-        <h1>hi</h1>
       </header>
       <div className="sidebar">
         <Sidebar />
@@ -31,7 +29,6 @@ const App = () => {
           <Route path="/videos" element={ <Videos /> } />
           <Route path="/gallery" element={ <Gallery /> } />
           <Route path="/login" element={ <LogIn /> } />
-          <Route path="/posts" element={ <Posts /> } />
         </Routes>
       </main>
     </div>

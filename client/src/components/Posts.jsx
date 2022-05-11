@@ -20,7 +20,20 @@ const Posts = (props) => {
         getBlogPosts()
     }, [])
 
+    const [comments, setComments] = useState([])
+    const [selectedComments, setSelectedComments] = useState(null)
+
+    const getComments = async () => {
+        await axios.get(`http://localhost:3001/api/comments`).then(
+            response =>
+            setComments(response.data.comments))
+    }
+    useEffect(() => {
+        getComments()
+    }, [])
+
     return (
+        <div>
         <div>
             {blogposts ?
                 blogposts.map((blogPost) => (
@@ -29,15 +42,10 @@ const Posts = (props) => {
                     </div>
                 )) : null
             }
-            {/* <div className="posts">
-                {
-                    props.post.map((blogpost) => (
-                        <div key={blogpost.id}>
-                            <p>{blogpost.content}</p>
-                        </div>
-                    ))
-                }
-            </div> */}
+        </div>
+        <div>
+            <Comments comments={ comments } />
+        </div>
         </div>
     )
 }
