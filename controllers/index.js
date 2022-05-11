@@ -31,7 +31,7 @@ const getComments = async (req, res) => {
     }
 }
 
-const createComments = async (req, res) => {
+const createComment = async (req, res) => {
     try {
         const comment = await new Comment(req.body)
         await comment.save()
@@ -73,11 +73,31 @@ const deleteComment = async (req, res) => {
     }
 }
 
+const getGallery = async (req, res) => {
+    try {
+        const gallery = await Gallery.find()
+        return res.status(200).json({ gallery })
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const getVideos = async (req, res) => {
+    try {
+        const videos = await Video.find()
+        return res.status(200).json({ videos })
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 module.exports = {
     getBlogPosts,
     createBlogPosts,
     getComments,
-    createComments,
+    createComment,
     updateComment,
-    deleteComment
+    deleteComment,
+    getGallery,
+    getVideos
 }

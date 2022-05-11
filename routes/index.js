@@ -8,6 +8,16 @@ router.get('/blogposts', controllers.getBlogPosts)
 
 router.post('/blogposts', controllers.createBlogPosts)
 
+router.get('/comments', controllers.getComments)
 
+router.post('/comments', controllers.createComment)
+
+router.put('/comments/:_id', controllers.updateComment)
+
+router.delete('/comments/:_id', controllers.deleteComment)
+
+router.get('/gallery', controllers.getGallery)
+
+router.get('/videos', controllers.getVideos)
 
 module.exports = router;
