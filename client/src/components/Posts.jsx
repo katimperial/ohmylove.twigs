@@ -1,8 +1,45 @@
-import React from 'react'
+import axios from "axios"
+import React, { useEffect, useState } from 'react'
 import Comments from './Comments'
 
-const Posts = () => {
+const Posts = (props) => {
 
+    const [blogposts, setBlogPosts] = useState()
+
+    const getBlogPosts = async () => {
+        try {
+            await axios.get(`http://localhost:3001/api/blogposts`).then(
+                response =>
+                setBlogPosts(response.data.blogPosts))
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        getBlogPosts()
+    }, [])
+
+    return (
+        <div>
+            {blogposts ?
+                blogposts.map((blogPost) => (
+                    <div key={blogPost.id} className="posts">
+                        <h4>{blogPost.content}</h4>
+                    </div>
+                )) : null
+            }
+            {/* <div className="posts">
+                {
+                    props.post.map((blogpost) => (
+                        <div key={blogpost.id}>
+                            <p>{blogpost.content}</p>
+                        </div>
+                    ))
+                }
+            </div> */}
+        </div>
+    )
 }
 
 export default Posts
