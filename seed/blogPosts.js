@@ -5,11 +5,11 @@ const { BlogPost } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const comments = [
-        { content: '' }
+    const blogPosts = [
+        { content: 'example' }
     ]
 
-    await Comment.insertMany(comments)
+    await BlogPost.insertMany(blogPosts)
     console.log("Created blog posts!")
 }
 const run = async () => {
