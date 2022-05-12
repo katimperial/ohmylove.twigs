@@ -20,4 +20,6 @@ router.get('/gallery', controllers.getGallery)
 
 router.get('/videos', controllers.getVideos)
 
+router.put('/videos/:_id', controllers.updateVideos)
+
 module.exports = router;

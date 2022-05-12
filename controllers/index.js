@@ -91,6 +91,23 @@ const getVideos = async (req, res) => {
     }
 }
 
+const updateVideos = async (req, res) => {
+    try {
+        const {_id} = req.params
+        let updated = await Comment.findByIdAndUpdate(_id, req.body, {new: true}, (err, video)=>{
+            if (err) {
+                res.status(500).send(err)
+            }
+            if (!video) {
+                res.status(500).send('Video not found')
+            }
+            return res.status(200).json(video)
+        })
+    } catch (error) {
+    }
+}
+
+
 module.exports = {
     getBlogPosts,
     createBlogPosts,
@@ -99,5 +116,6 @@ module.exports = {
     updateComment,
     deleteComment,
     getGallery,
-    getVideos
+    getVideos,
+    updateVideos
 }

@@ -15,6 +15,27 @@ const Comments = () => {
         }
     }
 
+    const updateComment = async (id) => {
+        try {
+            await axios.put(`http://localhost:3001/api/comments/${id}`, {
+                comments: content
+            })
+        } catch(err) {
+            console.log(err)
+        } window.location.reload()
+    }
+
+    const [content, setContent] = useState('')
+
+    const deleteComment = async (id) => {
+        console.log(id)
+        try {
+            await axios.delete(`http://localhost:3001/api/comments/${id}`)
+        } catch(err) {
+            console.log(err)
+        } window.location.reload()
+    }
+
     useEffect(() => {
         getComments()
     }, [])
@@ -25,6 +46,8 @@ const Comments = () => {
                 comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
+                        <button onClick={()=>updateComment(comment._id)}>Edit Comment</button>
+                        <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
                     </div>
                 )) : null 
             }
