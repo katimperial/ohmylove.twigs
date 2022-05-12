@@ -48,6 +48,7 @@ const Comments = () => {
                         <p>{comment.content}</p>
                         <button onClick={()=>updateComment(comment._id)}>Edit Comment</button>
                         <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
+                        <button onClick={()=>deleteComment(comment._id)}>Delete Comment</button>
                     </div>
                 )) : null 
             }
