@@ -15,6 +15,10 @@ const Comments = () => {
         }
     }
 
+    useEffect(() => {
+        getComments()
+    }, [])
+
     const updateComment = async (id) => {
         try {
             await axios.put(`http://localhost:3001/api/comments/${id}`, {
@@ -27,6 +31,12 @@ const Comments = () => {
 
     const [content, setContent] = useState('')
 
+    const [displayUpdateComment, setDisplayUpdateComment] = useState(false)
+
+    const toggleUpdateComment = () => {
+        setDisplayUpdateComment(!displayUpdateComment)
+    }
+
     const deleteComment = async (id) => {
         console.log(id)
         try {
@@ -36,18 +46,21 @@ const Comments = () => {
         } window.location.reload()
     }
 
-    useEffect(() => {
-        getComments()
-    }, [])
-
     return (
         <div>
             {comments ?
                 comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
-                        <button onClick={()=>updateComment(comment._id)}>Edit Comment</button>
-                        <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
+                        <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update Comment" : "No Thanks"}</button>
+                        <div className="displayUpdateComment">
+                            {displayUpdateComment ? 
+                                <div>
+                                    <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
+                                    <button onClick={()=>updateComment(comment._id)}>Submit</button>
+                                </div>
+                            : null}
+                        </div>
                         <button onClick={()=>deleteComment(comment._id)}>Delete Comment</button>
                     </div>
                 )) : null 
