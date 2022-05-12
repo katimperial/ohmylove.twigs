@@ -19,6 +19,23 @@ const Comments = () => {
         getComments()
     }, [])
 
+    const [newComment, setNewComment] = useState('')
+
+    useEffect(() => {console.log(newComment)}, [newComment])
+
+    const createComment = async () => {
+        try {
+            await axios.post(`http://localhost:3001/api/comments`, {
+                comments: content,
+                blog_id: '627bbeac5ff304158e00cd95'
+            })
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
+    const [content, setContent] = useState('')
+
     const updateComment = async (id) => {
         try {
             await axios.put(`http://localhost:3001/api/comments/${id}`, {
@@ -29,7 +46,6 @@ const Comments = () => {
         } window.location.reload()
     }
 
-    const [content, setContent] = useState('')
 
     const [displayUpdateComment, setDisplayUpdateComment] = useState(false)
 
@@ -52,6 +68,11 @@ const Comments = () => {
                 comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
+                        <label>
+                            Add New Comment:
+                            <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
+                        </label>
+                        <button onClick={createComment} className="submitButton">Submit</button>
                         <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update Comment" : "No Thanks"}</button>
                         <div className="displayUpdateComment">
                             {displayUpdateComment ? 
