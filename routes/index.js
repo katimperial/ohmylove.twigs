@@ -18,10 +18,6 @@ router.delete('/comments/:_id', controllers.deleteComment)
 
 router.get('/gallery', controllers.getGallery)
 
-router.get('/videos', controllers.getVideos)
-
-router.put('/videos/:_id', controllers.updateVideos)
-
 router.get('/vids', controllers.getVids)
 
 module.exports = router;

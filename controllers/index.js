@@ -1,5 +1,5 @@
 const { rmSync } = require('fs');
-const { BlogPost, Comment, Gallery, Video, Vid, } = require('../models')
+const { BlogPost, Comment, Gallery, Vid, } = require('../models')
 
 const getBlogPosts = async (req, res) => {
     try {
@@ -82,31 +82,6 @@ const getGallery = async (req, res) => {
     }
 }
 
-const getVideos = async (req, res) => {
-    try {
-        const videos = await Video.find()
-        return res.status(200).json({ videos })
-    } catch (error) {
-        return res.status(500).send(error.message);
-    }
-}
-
-const updateVideos = async (req, res) => {
-    try {
-        const {_id} = req.params
-        let updated = await Comment.findByIdAndUpdate(_id, req.body, {new: true}, (err, video)=>{
-            if (err) {
-                res.status(500).send(err)
-            }
-            if (!video) {
-                res.status(500).send('Video not found')
-            }
-            return res.status(200).json(video)
-        })
-    } catch (error) {
-    }
-}
-
 const getVids = async (req, res) => {
     try {
         const videos = await Vid.find()
@@ -126,7 +101,5 @@ module.exports = {
     updateComment,
     deleteComment,
     getGallery,
-    getVideos,
-    updateVideos,
     getVids
 }
