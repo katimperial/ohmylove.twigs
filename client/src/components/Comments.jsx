@@ -70,7 +70,7 @@ const Comments = (props) => {
                 props.comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
-                        <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update Comment" : "No Thanks"}</button>
+                        <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
                         <div className="displayUpdateComment">
                             {displayUpdateComment ? 
                                 <div>
@@ -79,7 +79,7 @@ const Comments = (props) => {
                                 </div>
                             : null}
                         </div>
-                        <button onClick={()=>deleteComment(comment._id)}>Delete Comment</button>
+                        <button onClick={()=>deleteComment(comment._id)}>Delete</button>
                     </div>
                 )) 
             }
