@@ -32,6 +32,7 @@ const getComments = async (req, res) => {
 }
 
 const createComment = async (req, res) => {
+    console.log(req.body)
     try {
         const comment = await new Comment(req.body)
         await comment.save()

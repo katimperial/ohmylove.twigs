@@ -25,10 +25,11 @@ const Comments = () => {
 
     const createComment = async () => {
         try {
-            await axios.post('http://localhost:3001/api/comments', {
-                comments: content,
+            let res = await axios.post('http://localhost:3001/api/comments', {
+                content: newComment,
                 blog_id: '627bbeac5ff304158e00cd95'
             })
+            console.log(res)
         } catch(err) {
             console.log(err)
         }
@@ -39,7 +40,7 @@ const Comments = () => {
     const updateComment = async (id) => {
         try {
             await axios.put(`http://localhost:3001/api/comments/${id}`, {
-                comments: content
+                content: content
             })
         } catch(err) {
             console.log(err)
@@ -90,7 +91,7 @@ const Comments = () => {
             }
             <label>
                 Add New Comment:
-                <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
+                <input type="text" value={newComment} onChange={e => setNewComment(e.target.value)}/>
             </label>
             <button onClick={createComment} className="submitButton">Submit</button>
         </div>
