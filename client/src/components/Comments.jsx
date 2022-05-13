@@ -25,7 +25,7 @@ const Comments = () => {
 
     const createComment = async () => {
         try {
-            await axios.post(`http://localhost:3001/api/comments`, {
+            await axios.post('http://localhost:3001/api/comments', {
                 comments: content,
                 blog_id: '627bbeac5ff304158e00cd95'
             })
@@ -64,15 +64,11 @@ const Comments = () => {
 
     return (
         <div>
-            {comments ?
+            {
+            comments ?
                 comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
-                        <label>
-                            Add New Comment:
-                            <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
-                        </label>
-                        <button onClick={createComment} className="submitButton">Submit</button>
                         <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update Comment" : "No Thanks"}</button>
                         <div className="displayUpdateComment">
                             {displayUpdateComment ? 
@@ -83,9 +79,20 @@ const Comments = () => {
                             : null}
                         </div>
                         <button onClick={()=>deleteComment(comment._id)}>Delete Comment</button>
+                        {/* <label>
+                            Add New Comment:
+                            <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
+                        </label>
+                        <button onClick={createComment} className="submitButton">Submit</button> */}
                     </div>
-                )) : null 
+                )) 
+                : null 
             }
+            <label>
+                Add New Comment:
+                <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
+            </label>
+            <button onClick={createComment} className="submitButton">Submit</button>
         </div>
     )
 
