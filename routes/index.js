@@ -22,4 +22,6 @@ router.get('/videos', controllers.getVideos)
 
 router.put('/videos/:_id', controllers.updateVideos)
 
+router.get('/vids', controllers.getVids)
+
 module.exports = router;

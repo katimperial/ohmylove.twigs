@@ -7,7 +7,7 @@ const Videos = () => {
 
     const getVideos = async () => {
         try {
-            await axios.get(`http://localhost:3001/api/videos`).then(
+            await axios.get(`http://localhost:3001/api/vids`).then(
                 response =>
                 setVideos(response.data.videos))
         } catch(err) {
@@ -24,15 +24,12 @@ const Videos = () => {
             {videos ?
                 videos.map((videos) => (
                     <div key={videos.id} className="video">
-                        <iframe height="480" width="500"  
+                        <iframe height="auto" width="auto"  
                             src={videos.video}>
                         </iframe>
                     </div>
                 )) : null
             }
-            <iframe height="480" width="500"  
-                src="https://www.youtube.com/embed/il_t1WVLNxk">
-            </iframe>
         </div>
     )
 
