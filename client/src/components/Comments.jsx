@@ -1,7 +1,7 @@
 import axios from "axios"
 import React, { useEffect, useState } from 'react'
 
-const Comments = () => {
+const Comments = (props) => {
 
     const [comments, setComments] = useState()
 
@@ -32,7 +32,7 @@ const Comments = () => {
             console.log(res)
         } catch(err) {
             console.log(err)
-        }
+        } window.location.reload()
     }
 
     const [content, setContent] = useState('')
@@ -66,8 +66,8 @@ const Comments = () => {
     return (
         <div>
             {
-            comments ?
-                comments.map((comment) => (
+            
+                props.comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
                         <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update Comment" : "No Thanks"}</button>
@@ -80,14 +80,8 @@ const Comments = () => {
                             : null}
                         </div>
                         <button onClick={()=>deleteComment(comment._id)}>Delete Comment</button>
-                        {/* <label>
-                            Add New Comment:
-                            <input type="text" value={content} onChange={e => setNewComment(e.target.value)}/>
-                        </label>
-                        <button onClick={createComment} className="submitButton">Submit</button> */}
                     </div>
                 )) 
-                : null 
             }
             <label>
                 Add New Comment:
