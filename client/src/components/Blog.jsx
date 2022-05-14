@@ -16,7 +16,7 @@ const Blog = () => {
     }, [])
 
     return(
-        <div>
+        <div className='blog'>
             <Posts blogposts={ blogposts } />
         </div>
     )

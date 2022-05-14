@@ -34,7 +34,7 @@ const Posts = (props) => {
 
     return (
         <div>
-        <div>
+        <div className="blog-posts">
             {blogposts ?
                 blogposts.map((blogPost) => (
                     <div key={blogPost.id} className="posts">
