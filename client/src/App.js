@@ -14,9 +14,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="nav">
-        <Nav />
+      <header>
+        .
       </header>
+      <div className="nav">
+        <Nav />
+      </div>
       <div className="sidebar">
         <Sidebar />
       </div>
