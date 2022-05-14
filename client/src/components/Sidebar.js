@@ -5,7 +5,6 @@ const Sidebar = () => {
     return (
         <nav>
             <div>
-                <Link to="/login">Log In</Link>
             </div>
         </nav>
     )
