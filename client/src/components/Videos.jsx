@@ -21,6 +21,7 @@ const Videos = () => {
 
     return(
         <div>
+            <h1 className='header-text'>Videos</h1>
             {videos ?
                 videos.map((videos) => (
                     <div key={videos.id} className="video">

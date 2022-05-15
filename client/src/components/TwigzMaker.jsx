@@ -7,6 +7,7 @@ const TwigzMaker = () => {
 
     return (
         <div>
+            <h1 className='header-text'>TwigzMaker</h1>
             <main className='flexbox'>
                 <Maker id="makerLeft" className="maker">
                     <Dollz id="twigz" className="doll" draggable="false">

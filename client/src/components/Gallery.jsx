@@ -21,14 +21,17 @@ const Gallery = (props) => {
 
     return(
         <div>
-            {galleries ?
-                galleries.map((gallery) => (
-                    <div key={gallery.id} className="gallery">
-                        <img src={gallery.image} className="galleryImage" />
-                        <h4>{gallery.photographer}</h4>
-                    </div>
-                )) : null
-            }
+            <h1 className='header-text'>Gallery</h1>
+            <div>
+                {galleries ?
+                    galleries.map((gallery) => (
+                        <div key={gallery.id} className="gallery">
+                            <img src={gallery.image} className="galleryImage" />
+                            <h4>Photographer: {gallery.photographer}</h4>
+                        </div>
+                    )) : null
+                }
+            </div>
         </div>
     )
 

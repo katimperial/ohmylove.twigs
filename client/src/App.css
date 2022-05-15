@@ -26,8 +26,6 @@ header {
   margin: 5px;
 }
 
-/* Blog */
-
 .header-text {
   font-family: 'Bonbon', cursive;
   /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
@@ -36,9 +34,10 @@ header {
   /* text-shadow: 0 0 5px #bbfcf9, 0 0 10px #bbfcf9; */
   text-shadow: 0 0 5px #6a02fa, 0 0 10px #bbfcf9;
   color: #ffc885;
-
   font-size: 60px;
 }
+
+/* Blog */
 
 .posts {
   margin-top: 40px;
