@@ -71,25 +71,27 @@ const Comments = (props) => {
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
                         <div className="change-comment">
-                            <button onClick={toggleUpdateComment} className="change-comment-button">{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
+                            <button onClick={toggleUpdateComment} className="comment-button">{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
                             <div className="displayUpdateComment">
                                 {displayUpdateComment ? 
                                     <div>
                                         <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
-                                        <button onClick={()=>updateComment(comment._id)} className="change-comment-button">Submit</button>
+                                        <button onClick={()=>updateComment(comment._id)} className="comment-button">Submit</button>
                                     </div>
                                 : null}
                             </div>
-                            <button onClick={()=>deleteComment(comment._id)} className="change-comment-button">Delete</button>
+                            <button onClick={()=>deleteComment(comment._id)} className="comment-button">Delete</button>
                         </div>
                     </div>
                 )) 
             }
-            <label>
-                Add New Comment:
-                <input type="text" value={newComment} onChange={e => setNewComment(e.target.value)}/>
-            </label>
-            <button onClick={createComment} className="submitButton">Submit</button>
+            <div className="new-comment">
+                <p>Add New Comment:</p>
+                <label>
+                    <input type="text" value={newComment} onChange={e => setNewComment(e.target.value)}/>
+                </label>
+                <button onClick={createComment} className="comment-button">Submit</button>
+            </div>
         </div>
     )
 
