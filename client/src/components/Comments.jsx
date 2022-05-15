@@ -75,8 +75,8 @@ const Comments = (props) => {
                             <div className="displayUpdateComment">
                                 {displayUpdateComment ? 
                                     <div>
-                                        <input type="text" value={content} onChange={e => setContent(e.target.value)} className="text-box"/>
-                                        <button onClick={()=>updateComment(comment._id)} className="comment-button">Submit</button>
+                                        <textarea type="text" value={content} onChange={e => setContent(e.target.value)} className="text-box"/>
+                                        <button onClick={()=>updateComment(comment._id)} className="submit-button">Submit</button>
                                     </div>
                                 : null}
                             </div>
@@ -89,7 +89,7 @@ const Comments = (props) => {
                 <p className="add-new-comment">Add New Comment:</p>
                 <div className="new-comment-field">
                 <label>
-                    <input type="text" value={newComment} onChange={e => setNewComment(e.target.value)} className="text-box"/>
+                    <textarea type="text" value={newComment} onChange={e => setNewComment(e.target.value)} className="text-box"/>
                 </label>
                 <button onClick={createComment} className="comment-button">Submit</button>
                 </div>

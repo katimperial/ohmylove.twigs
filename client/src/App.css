@@ -87,7 +87,7 @@ header {
   align-items: center;
 }
 
-.comment-button {
+.comment-button, .submit-button {
   margin-right: 5px;
   border-style: double;
   border-width: 2px;
@@ -105,6 +105,7 @@ header {
   border-color: #f3f3f3;
   background-color: #dcfcee;
   height: 30px;
+  text-align: start;
 }
 
 .add-new-comment {
