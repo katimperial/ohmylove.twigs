@@ -17,6 +17,7 @@ const Blog = () => {
 
     return(
         <div className='blog'>
+            <h1 className='header-text'>Blog</h1>
             <Posts blogposts={ blogposts } />
         </div>
     )

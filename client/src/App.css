@@ -28,6 +28,18 @@ header {
 
 /* Blog */
 
+.header-text {
+  font-family: 'Bonbon', cursive;
+  /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+  /* text-shadow: 0 0 5px #ffc885, 0 0 10px #ffc885;
+  color: #bbfcf9; */
+  /* text-shadow: 0 0 5px #bbfcf9, 0 0 10px #bbfcf9; */
+  text-shadow: 0 0 5px #6a02fa, 0 0 10px #bbfcf9;
+  color: #ffc885;
+
+  font-size: 60px;
+}
+
 .posts {
   margin-top: 40px;
   margin-bottom: 40px;
