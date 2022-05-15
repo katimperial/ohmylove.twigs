@@ -189,3 +189,41 @@ header {
 .indv-video {
   margin: 5px;
 }
+
+/* Gallery */
+
+.Gallery-page {
+  /* height: 200vh; */
+  height: auto;
+}
+
+.gallery-block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  margin: 30px;
+  flex-wrap: wrap;
+  column-count: 2;
+  column-gap: 40px;
+  max-height: 1200px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: auto;
+}
+
+.gallery-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+}
+
+.galleryImage {
+  border-style: solid;
+  border-color: #bbfcf9;
+  border-width: 3px;
+}

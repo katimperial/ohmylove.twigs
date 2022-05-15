@@ -20,14 +20,14 @@ const Gallery = (props) => {
     }, [])
 
     return(
-        <div>
+        <div className="Gallery-page">
             <h1 className='header-text'>Gallery</h1>
-            <div>
+            <div className="gallery-block">
                 {galleries ?
                     galleries.map((gallery) => (
                         <div key={gallery.id} className="gallery">
-                            <img src={gallery.image} className="galleryImage" />
-                            <h4>Photographer: {gallery.photographer}</h4>
+                            <img src={gallery.image} className="galleryImage" style={{display: 'block', maxWidth:'80%'}}/>
+                            <p className="gallery-text">Photographer: {gallery.photographer}</p>
                         </div>
                     )) : null
                 }
