@@ -58,6 +58,36 @@ header {
   -webkit-text-stroke-color: #6a02fa */
 }
 
+/* Comments */
+
+.comments {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  border-color: #f3f3f3;
+  border-width: 3px;
+  width: 500px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.change-comment {
+  display: flex;
+  flex-direction: row;
+}
+
+.change-comment-button {
+  margin-right: 5px;
+  border-style: double;
+  border-width: 2px;
+  border-color: #6a02fa;
+  background-color: #bbfce0;
+}
+
 /* TwigzMaker */
 
 .flexbox {

@@ -70,16 +70,18 @@ const Comments = (props) => {
                 props.comments.map((comment) => (
                     <div key={comment.id} className="comments">
                         <p>{comment.content}</p>
-                        <button onClick={toggleUpdateComment}>{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
-                        <div className="displayUpdateComment">
-                            {displayUpdateComment ? 
-                                <div>
-                                    <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
-                                    <button onClick={()=>updateComment(comment._id)}>Submit</button>
-                                </div>
-                            : null}
+                        <div className="change-comment">
+                            <button onClick={toggleUpdateComment} className="change-comment-button">{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
+                            <div className="displayUpdateComment">
+                                {displayUpdateComment ? 
+                                    <div>
+                                        <input type="text" value={content} onChange={e => setContent(e.target.value)}/>
+                                        <button onClick={()=>updateComment(comment._id)} className="change-comment-button">Submit</button>
+                                    </div>
+                                : null}
+                            </div>
+                            <button onClick={()=>deleteComment(comment._id)} className="change-comment-button">Delete</button>
                         </div>
-                        <button onClick={()=>deleteComment(comment._id)}>Delete</button>
                     </div>
                 )) 
             }
