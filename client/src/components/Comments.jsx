@@ -69,7 +69,7 @@ const Comments = (props) => {
             
                 props.comments.map((comment) => (
                     <div key={comment.id} className="comments">
-                        <p>{comment.content}</p>
+                        <p className="comment-text">{comment.content}</p>
                         <div className="change-comment">
                             <button onClick={toggleUpdateComment} className="comment-button">{displayUpdateComment === false ? "Update" : "Nevermind" }</button>
                             <div className="displayUpdateComment">
@@ -86,7 +86,7 @@ const Comments = (props) => {
                 )) 
             }
             <div className="new-comment">
-                <p>Add New Comment:</p>
+                <p className="add-new-comment">Add New Comment:</p>
                 <div className="new-comment-field">
                 <label>
                     <input type="text" value={newComment} onChange={e => setNewComment(e.target.value)} className="text-box"/>

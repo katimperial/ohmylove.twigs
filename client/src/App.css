@@ -53,6 +53,8 @@ header {
   text-align: left;
   background-color: rgba(255, 255, 255, 0.3);
   color: #6a02fa;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
     /* color: #bbfcf9; */
   /* -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #6a02fa */
@@ -75,6 +77,10 @@ header {
   background-color: rgba(252, 249, 220, 0.3);
 }
 
+.comment-text {
+  font-family: 'Dancing Script', cursive;
+}
+
 .change-comment {
   display: flex;
   flex-direction: row;
@@ -88,6 +94,8 @@ header {
   border-color: #6a02fa;
   background-color: #bbfce0;
   height: 24px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
 }
 
 .text-box {
@@ -97,6 +105,11 @@ header {
   border-color: #f3f3f3;
   background-color: #dcfcee;
   height: 30px;
+}
+
+.add-new-comment {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
 }
 
 .new-comment {
