@@ -10,6 +10,20 @@ const getBlogPosts = async (req, res) => {
     }
 }
 
+const deleteBlogPost = async (req, res) => {
+    try {
+        const {_id} = req.params
+        const deleted = await BlogPost.findByIdAndDelete(_id)
+        console.log(deleted)
+        if (deleted) {
+            return res.status(200).send('Blog deleted')
+        }
+        throw new Error('Blog not found')
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 const createBlogPosts = async (req, res) => {
     try {
         const blogPost = await new BlogPost(req.body)
@@ -96,6 +110,7 @@ const getVids = async (req, res) => {
 
 module.exports = {
     getBlogPosts,
+    deleteBlogPost,
     createBlogPosts,
     getComments,
     createComment,

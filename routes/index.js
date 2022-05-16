@@ -8,6 +8,8 @@ router.get('/blogposts', controllers.getBlogPosts)
 
 router.post('/blogposts', controllers.createBlogPosts)
 
+router.delete('/blogposts/:_id', controllers.deleteBlogPost)
+
 router.get('/comments', controllers.getComments)
 
 router.post('/comments', controllers.createComment)
