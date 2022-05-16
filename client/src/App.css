@@ -5,6 +5,7 @@
   /* background-repeat: repeat; */
   background-size: cover;
   /* height: 115vh; */
+  cursor: url('https://i.imgur.com/dvL8hi0.png'), auto;
 }
 header {
   margin-top: 10px;
