@@ -50,10 +50,10 @@ header {
   font-size: 30px;
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
-  width: 6500px;
+  width: 13000px;
   -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
   
   -moz-animation: my-animation 40s linear infinite;
   -webkit-animation: my-animation 40s linear infinite;
@@ -62,21 +62,21 @@ header {
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
+  from { -moz-transform: translateX(30px); }
   to { -moz-transform: translateX(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
+  from { -webkit-transform: translateX(30px); }
   to { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes my-animation {
   from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -moz-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
   }
   to {
     -moz-transform: translateX(-100%);

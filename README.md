@@ -45,4 +45,6 @@ Functionalities will include: a blog with the option to leave comments, a galler
 
 [Scroll bar code](https://blog.hubspot.com/website/scrolling-text-css)
 
+[Scroll bar debugging](https://w3schools.invisionzone.com/topic/53755-how-to-remove-white-space-when-scrolling-text-in-css/)
+
 [Scroll bar gradient color animation](https://codepen.io/P1N2O/pen/pyBNzX)
