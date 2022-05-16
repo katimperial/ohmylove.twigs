@@ -309,8 +309,16 @@ header {
 
 /* Twigz Maker */
 
+.Twigz-Maker{
+  max-height: 1000vh;
+}
+
 #container{
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  margin-right: 150px;
 }
 /* #container{
   position: absolute;
@@ -386,9 +394,10 @@ header {
 .twigz-button{
   margin-left: 100px;
   position: relative;
-  left: 600px;
 }
 
 .all-twigz-buttons{
   display: flex;
+  margin-top: 366px;
+  margin-left: 100px;
 }

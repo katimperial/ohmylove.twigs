@@ -24,7 +24,7 @@ const TwigzMaker = () => {
 
 
     return (
-        <div>
+        <div className='Twigz-Maker'>
             <h1 className='header-text'>TwigzMaker</h1>
             <div id="container">
                 <div id="background">
@@ -32,12 +32,11 @@ const TwigzMaker = () => {
                     <div id="clothes" className={"clothes"+(dressupState["clothes"].current+1)}></div>
                     <div id="hair" className={"hair"+(dressupState["hair"].current+1)}></div>
                     <div id="hats" className={"hats"+(dressupState["hats"].current+1)}></div>
-                    {/* <div id="hats" className={"hats"+(dressupState["hats"].current+1)}></div> */}
                 </div>
                 <div className='all-twigz-buttons'>
-                <button id="next-hair" className='twigz-button' onClick={() => next("hair")}>Next Hair</button>
-                <button id="next-outfit" className='twigz-button' onClick={() => next("clothes")}>Next Outfit</button>
-                <button id="next-hat" className='twigz-button' onClick={() => next("hat")}>Next Hat</button>
+                    <button id="next-hair" className='twigz-button' onClick={() => next("hair")}>Next Hair</button>
+                    <button id="next-outfit" className='twigz-button' onClick={() => next("clothes")}>Next Outfit</button>
+                    <button id="next-hat" className='twigz-button' onClick={() => next("hats")}>Next Hat</button>
                 </div>
             </div>
             {/* <main className='flexbox'>
