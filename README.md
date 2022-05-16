@@ -11,6 +11,14 @@ MERN stack
 ## What is ohmylove.twigs?
 ohmylove.twigs is an FKA twigs fan page <3 dedicated to everyone's favorite ethereal post 21st Century British pop star. It is inspired by early/mid-aughts fan sites (often hosted on AngelFire or Geocities). These sites were made for no reason other than to express the pure joy of the fan, often created by teenagers with nothing but a passion for their subject and a copy of "HTML for Dummies". In my opinion, an example of 21st c. folk art.
 Functionalities will include: a blog with the option to leave comments, a gallery, music and/or video page, and (hopefully) a Dollz maker.
+![Home screenshot](https://i.imgur.com/ulOTeRQ.jpg)
+![TwigzMaker screenshot](https://i.imgur.com/ZBDYsCP.jpg)
+![Videos screenshot](https://i.imgur.com/M5YI7wR.jpg)
+## Future goals
+* Although my dollmaker works, it's not how I intended it to be so would be cool to get that right.
+* Comments are a bit glitchy, would like to fix that.
+* Implement auth.
+* Add a sidebar.
 ## ERD, Component Hierarchy Diagram, and Trello Board
 [Backend ERD](https://lucid.app/lucidchart/d7396ff7-9e4c-4a92-af7e-645aeba4ee45/edit?invitationId=inv_c7041a1c-dc69-484d-80b4-2c61da23629f)
 
@@ -35,6 +43,28 @@ Functionalities will include: a blog with the option to leave comments, a galler
 ![http://www.rsteviemoore.com/](https://i.imgur.com/FquoNH2.png)
 ![https://web.archive.org/web/20100227040047/http://milkbbi.com/](https://i.imgur.com/55KLE1p.png)
 ![http://www.bio.brandeis.edu/fieldbio/medicinal_plants/pages/smartweed.html](https://i.imgur.com/omdBhZ3.png)
+
+## Image credits
+
+[Liz Johnson Artur](https://www.nytimes.com/interactive/2020/10/19/t-magazine/fka-twigs.html)
+
+[Inez & Vinoodh](https://www.dazeddigital.com/artsandculture/gallery/17926/7/fka-twigs)
+
+[Paola Kudacki](https://www.elle.com/culture/celebrities/a37605/fka-twigs-elle-august-2016-cover/)
+
+Orograph photo of Twigs in pink fluffy dress courtesy of AVANTgarden Magazine Issue 4, 2018.
+
+"youthful" iD cover photo courtesy of iD Magazine.
+
+["Measure of A Man" screenshot photo](https://www.nme.com/news/music/watch-fka-twigs-wield-a-sword-in-new-video-for-measure-of-a-man-3107128)
+
+[Yellow background Matthew Stone photo](https://ew.com/music/2019/10/20/fka-twigs-magdalene-interview/)
+
+[NME photo](https://www.nme.com/big-reads/fka-twigs-cover-interview-2022-caprisongs-godlike-genius-bandlab-nme-awards-3168413)
+
+[Jamie-James Medina](https://www.nytimes.com/2014/02/23/arts/music/the-eps-and-videos-of-fka-twigs.html)
+
+[Orograph photo of Twigs wearing CreepyYeha](https://www.matthewjosephs.com/fka-twigs-fukk-sleep)
 
 ## Sources
 [Anime Geocities Screenshots](https://gloomypanties.tumblr.com/post/189890593022/anime-themed-geocities-x)
