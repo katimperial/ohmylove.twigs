@@ -5,9 +5,9 @@ import Dollz from './Dollz'
 const TwigzMaker = () => {
 
     const [dressupState, setDressupState] = useState({
-        hair: {current: 0, total: 3},
+        hair: {current: 0, total: 4},
         clothes: {current: 0, total: 4},
-        hats: {current: 0, total: 2}
+        hats: {current: 0, total: 3},
     })
 
     function next(item){
@@ -31,15 +31,8 @@ const TwigzMaker = () => {
                     <div id="twigz"></div>
                     <div id="clothes" className={"clothes"+(dressupState["clothes"].current+1)}></div>
                     <div id="hair" className={"hair"+(dressupState["hair"].current+1)}></div>
-                    <div id="hat" className={"hats"+(dressupState["hats"].current+1)}></div>
-                    {/* <div id="buns-hair" className="hair2"></div>
-                    <div id="red-streaks-hair" className="hair3"></div> */}
-                    {/* <div id="boucher-outfit" className="clothes1"></div>
-                    <div id="hat-outfit" className="clothes2"></div>
-                    <div id="pendulum-pants" className="clothes3"></div>
-                    <div id="stage-outfit" className="clothes4"></div>
-                    <div id="stage-outfit-hat" className="hat1"></div>
-                    <div id="tricorner-hat" className="hat2"></div> */}
+                    <div id="hats" className={"hats"+(dressupState["hats"].current+1)}></div>
+                    {/* <div id="hats" className={"hats"+(dressupState["hats"].current+1)}></div> */}
                 </div>
                 <div className='all-twigz-buttons'>
                 <button id="next-hair" className='twigz-button' onClick={() => next("hair")}>Next Hair</button>

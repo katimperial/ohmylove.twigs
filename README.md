@@ -48,3 +48,5 @@ Functionalities will include: a blog with the option to leave comments, a galler
 [Scroll bar debugging](https://w3schools.invisionzone.com/topic/53755-how-to-remove-white-space-when-scrolling-text-in-css/)
 
 [Scroll bar gradient color animation](https://codepen.io/P1N2O/pen/pyBNzX)
+
+[Doll game tutorial](https://mariaeramosmorales.medium.com/make-a-dress-up-game-or-character-generator-37bdebab9601)
