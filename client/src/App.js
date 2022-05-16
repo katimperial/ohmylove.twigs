@@ -25,7 +25,7 @@ const App = () => {
         </div>
       </div>
       <header>
-        .
+        <img src="https://i.imgur.com/VqjuDME.gif"/>
       </header>
       <div className="nav">
         <Nav />
