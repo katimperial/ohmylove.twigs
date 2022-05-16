@@ -42,3 +42,7 @@ Functionalities will include: a blog with the option to leave comments, a galler
 [Fruits Basket fanpage screenshot](https://computerhistory.org/blog/a-tale-of-deleted-cities/)
 
 [Dream Fantasy Realm screenshot](https://www.vice.com/en/article/xywb57/beat-your-eyeballs-to-death-with-this-majestic-geocities-tribute)
+
+[Scroll bar code](https://blog.hubspot.com/website/scrolling-text-css)
+
+[Scroll bar gradient color animation](https://codepen.io/P1N2O/pen/pyBNzX)

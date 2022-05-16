@@ -21,6 +21,70 @@ header {
   font-size: 60px;
 }
 
+/* Scroll Bar */
+
+.scroll-bar {
+  overflow: hidden;
+  height: 40px;
+  width: auto;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.scroll-text {
+  color: #f3f3f3;
+  font-size: 30px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  width: 6500px;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 40s linear infinite;
+  -webkit-animation: my-animation 40s linear infinite;
+  animation: my-animation 40s linear infinite;
+} 
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+} 
+
+
 /* Nav */
 
 .nav {
