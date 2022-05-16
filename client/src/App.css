@@ -7,7 +7,7 @@
   /* height: 115vh; */
 }
 header {
-  color: #ffc885
+  margin-top: 10px;
 }
 
 .header-text {
@@ -92,7 +92,7 @@ header {
   border-style: dotted;
   border-color: #f3f3f3;
   border-width: 4px;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -112,7 +112,7 @@ header {
 
 .Home {
   height: 115vh;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /* Blog */
