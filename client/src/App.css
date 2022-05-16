@@ -166,7 +166,7 @@ header {
   align-items: center;
 }
 
-.comment-button, .submit-button {
+.comment-button, .submit-button, .twigz-button {
   margin-right: 5px;
   border-style: double;
   border-width: 2px;
@@ -210,42 +210,6 @@ header {
   display: flex;
   align-items: flex-end;
 }
-
-/* TwigzMaker */
-
-/* .flexbox {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  max-width: 768px;
-  height: auto;
-
-  overflow: hidden;
-
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.flexbox .maker {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  max-width: 300px;
-
-  background-color: #313131;
-
-  padding: 15px;
-}
-
-.flexbox .maker .doll {
-  padding: 15px 25px;
-  background-color: #f3f3f3;
-
-  cursor: pointer;
-  margin-bottom: 15px
-}  */
 
 /* Videos */
 
