@@ -109,6 +109,25 @@ header {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* Sidebar */
+
+.sidebarTotal {
+  display: flex;
+  justify-self: end;
+  margin-left: 10px
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-style: dotted;
+  border-width: 4px;
+  border-color: #f3f3f3;
+  width: 150px;
+  background-color: #bbfce0;
+}
+
+
 /* Home */
 
 .Home {
