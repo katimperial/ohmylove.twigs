@@ -213,7 +213,7 @@ header {
 
 /* TwigzMaker */
 
-.flexbox {
+/* .flexbox {
   display: flex;
   justify-content: space-between;
 
@@ -245,7 +245,7 @@ header {
 
   cursor: pointer;
   margin-bottom: 15px
-} 
+}  */
 
 /* Videos */
 
@@ -305,4 +305,82 @@ header {
   border-style: solid;
   border-color: #bbfcf9;
   border-width: 3px;
+}
+
+/* Twigz Maker */
+
+#container{
+  max-height: 100vh;
+}
+/* #container{
+  position: absolute;
+  margin:auto;
+  width: 1000px;
+  height: 1123px;
+} */
+
+#twigz{
+  position:absolute;
+  width: 189px;
+  height: 338px;
+  background-image: url("https://i.imgur.com/Bh6zcpw.png");
+  background-repeat: no-repeat;
+}
+
+/* #background{
+  bottom: 1246px;
+  right: 1119px;
+  position: absolute;
+} */
+
+#hair, #clothes, #hat{
+  position:absolute;
+  width:189px;   /* width of actual image */
+  height:338px; /* height of actual image */
+}
+
+.hair1{
+  background-image: url(https://i.imgur.com/312EaQd.png);
+}
+
+.hair2{
+  background-image: url(https://i.imgur.com/a6KFosd.png);
+}
+
+.hair3{
+  background-image: url(https://i.imgur.com/7Ot9get.png);
+}
+
+.clothes1{
+  background-image: url(https://i.imgur.com/s38p1mv.png);
+}
+
+.clothes2{
+  background-image: url(https://i.imgur.com/bgK3p3A.png);
+}
+
+.clothes3{
+  background-image: url(https://i.imgur.com/wyYFPNR.png);
+}
+
+.clothes4{
+  background-image: url(https://i.imgur.com/PLXtYhC.png);
+}
+
+.hat1{
+  background-image: url(https://i.imgur.com/4KMEEIJ.png);
+}
+
+.hat2{
+  background-image: url(https://i.imgur.com/ZJVt6k6.png);
+}
+
+.twigz-button{
+  margin-left: 100px;
+  position: relative;
+  left: 600px;
+}
+
+.all-twigz-buttons{
+  display: flex;
 }
