@@ -19,6 +19,7 @@ const Gallery = (props) => {
         getGalleries()
     }, [])
 
+
     return(
         <div className="Gallery-page">
             <h1 className='header-text'>Gallery</h1>
@@ -37,4 +38,4 @@ const Gallery = (props) => {
 
 }
 
-export default Gallery
+export default Gallery;

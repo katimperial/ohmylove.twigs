@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div>
-            <h1>Hi</h1>
+        <div className='Home'>
+            <h1 className='header-text'>Welcome to ohmylove.twigs ♡</h1>
         </div>
     )
 

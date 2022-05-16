@@ -37,6 +37,13 @@ header {
   font-size: 60px;
 }
 
+/* Home */
+
+.Home {
+  height: 115vh;
+  margin-top: 200px;
+}
+
 /* Blog */
 
 .posts {
