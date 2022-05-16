@@ -30,9 +30,9 @@ const App = () => {
       <div className="nav">
         <Nav />
       </div>
-      <div className="sidebar">
+      {/* <div className="sidebar">
         <Sidebar />
-      </div>
+      </div> */}
       <main>
         <Routes>
           <Route path="/" element={ <Home /> } />
